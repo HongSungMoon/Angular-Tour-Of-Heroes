@@ -1,0 +1,11 @@
+<div *ngIf="messageService.messages.length">
+
+  <H2>Messages</H2>
+  <button class="clear"
+  (click)="messageService.clear()">clear</button>
+
+  <div *ngFor="let message of messageService.messages"> {{message}}</div>
+
+</div>
+
+<!-- *ngIf - 표시하는 메세지가 있는 경우 메세지 영역을 표시 -->
